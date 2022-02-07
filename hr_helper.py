@@ -32,7 +32,6 @@ def greeting():
 
     return 'Привет человек!'
 
-
 def create_task():
     """Create a todo task"""
 
@@ -62,16 +61,6 @@ def main():
     for k, v in commands_dict['commands'].items():
         if query in v:
             print(globals()[k]())
-
-    # if query == 'привет друг':
-    #     print(greeting())
-    # elif query == 'добавить задачу':
-    #     print(create_task())
-    # elif query == 'включить музыку':
-    #     print(play_music())
-    # else:
-    #     print('Повтори внятно!')
-
 
 if __name__ == '__main__':
     main()
